@@ -88,6 +88,8 @@ def movies_with_directors_set(source)
   i = 0 
   array = []
   while i < source.length do 
+    d = 0 
+    while d < source[i][:movies].length do 
     array.push(source[i][:name], source[i][:name] => source[i][:movies])
     i+=1 
   end 
