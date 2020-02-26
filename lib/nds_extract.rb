@@ -56,6 +56,7 @@ def movies_with_director_key(name, movies_collection)
     movie_director = movies_collection[i][:director_name]
     if !hash[movie_name]
       hash[movie_name] = movie_director
+    end 
     i +=1 
   end 
 
