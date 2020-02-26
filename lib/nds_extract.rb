@@ -54,8 +54,8 @@ def movies_with_director_key(name, movies_collection)
   while i < movies_collection.length do 
     movie_name = movies_collection[i][:title]
     movie_director = movies_collection[i][:director_name]
-    hash[:movie_name] = :director_name
-      
+    if !hash[movie_name]
+      hash[movie_name] = movie_director
     i +=1 
   end 
 
