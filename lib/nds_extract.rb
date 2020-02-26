@@ -49,9 +49,13 @@ def movies_with_director_key(name, movies_collection)
   # :director_name key. This addition can be done by using the provided
   # movie_with_director_name method
   i = 0 
+  hash = {} 
+  
   while i < movies_collection.length do 
-    if movies_collection[i] == movie_with_director_name(name, movies_collection[i])
-      r[i] = {name => movies_collection[i]} 
+    movie_name = movies_collection[i][:title]
+    movie_director = movies_collection[i][:director_name]
+    hash[:movie_name] = :director_name
+      
       
     end 
     i +=1 
