@@ -89,7 +89,7 @@ def movies_with_directors_set(source)
   array = []
   while i < source.length do 
     dname = source[i][:name]
-    mhash = {:dname => source[i][:movies]}
+    mhash = {:dname => source[dname][:movies][i]}
     array.push(mhash)
     i+=1 
   end 
