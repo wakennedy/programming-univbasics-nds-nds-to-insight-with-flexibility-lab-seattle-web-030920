@@ -91,6 +91,7 @@ def movies_with_directors_set(source)
     dname = source[i][:name]
     mhash = source[i][:movies]
     array.push(dname, mhash)
+    i+=1 
   end 
   array
 end
