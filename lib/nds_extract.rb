@@ -95,6 +95,7 @@ def movies_with_directors_set(source)
     array.push(source[i][:name], {source[i][:movies]})
   i+=1 
   end 
+  array
 end
 
 # ----------------    End of Your Code Region --------------------
